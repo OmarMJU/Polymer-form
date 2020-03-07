@@ -1,0 +1,84 @@
+<dom-module id="omju-component">
+
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    
+    <h1 id="titulo">Hola, soy [[name]] y tengo [[edad]] años.</h1>
+  </template>
+
+  <script>
+    Polymer({
+      is: "omju-component",
+      properties: {
+        name: {
+          type: String,
+          value: "default"
+        },
+        edad: {
+          type: Number,
+          value: 25
+        }
+      },
+      // Se ejecuta cuando el componente está creado. Acceso al elemento y sus propiedades.
+      created: function() {
+      },
+
+      // Se ejecuta cuando el componente está listo, siempre se ejecuta después de "created". Acceso al nodo local (local DOM).
+      ready: function() {
+      },
+
+      // Se ejecuta cuando el componente ya está en el documento, siempre se ejecuta después de "ready". Acceso al documento (document).
+      attached: function() {
+      },
+
+      // Se ejecuta cuando el elemento se saca del documento.
+      detached: function() {
+      },
+
+      // Se ejecuta cuando uno de los atributos cambia sí y solo sí ese atributo no este declarado como propiedad, en este caso, para el ejemplo el atributo "apellido".
+      attributeChanged: function() {
+      }
+    });
+  </script>
+</dom-module>
+
+<!-- <dom-module id="omju-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+    <content></content>
+  </template>
+
+  <script>
+    /**
+     * `omju-component`
+     * Elemento para escritura de texto. Prueba.
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OmjuComponent extends Polymer.Element {
+      static get is() { return 'omju-component'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'Omar'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OmjuComponent.is, OmjuComponent);
+  </script>
+</dom-module> -->
