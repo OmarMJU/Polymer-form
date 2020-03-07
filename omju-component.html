@@ -61,18 +61,18 @@
       </div>
       <div class="formulario">
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Nombre">
-          <input type="text" class="dato-entrada" placeholder="Apellido">
+          <input type="text" class="dato-entrada" placeholder="Nombre" value="[[name]]">
+          <input type="text" class="dato-entrada" placeholder="Apellido" value="[[lastname]]">
         </div>
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Direcci&oacute;n">
+          <input type="text" class="dato-entrada" placeholder="Direcci&oacute;n" value="[[direccion]]">
         </div>
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Emal">
+          <input type="text" class="dato-entrada" placeholder="Emal" value="[[correo]]">
         </div>
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Password">
-          <input type="text" class="dato-entrada" placeholder="Confirma Password">
+          <input type="password" class="dato-entrada" placeholder="Password" value="[[password]]">
+          <input type="password" class="dato-entrada" placeholder="Confirma Password" value="[[password]]">
         </div>
       </div>
     </div>
@@ -84,68 +84,25 @@
       properties: {
         name: {
           type: String,
-          value: "default"
+          value: "Omar"
         },
-        edad: {
-          type: Number,
-          value: 25
+        lastname: {
+          type: String,
+          value: "Juarez"
+        },
+        direccion: {
+          type: String,
+          value: "En algun lugar de un gran pais"
+        },
+        correo: {
+          type: String,
+          value: "omarmauricio.juarez.contractor@bbva.com"
+        },
+        password: {
+          type: String,
+          value: "este-es-mi-pass"
         }
       }
-      // Se ejecuta cuando el componente está creado. Acceso al elemento y sus propiedades.
-      // created: function() {
-      // },
-
-      // Se ejecuta cuando el componente está listo, siempre se ejecuta después de "created". Acceso al nodo local (local DOM).
-      // ready: function() {
-      // },
-
-      // Se ejecuta cuando el componente ya está en el documento, siempre se ejecuta después de "ready". Acceso al documento (document).
-      // attached: function() {
-      // },
-
-      // Se ejecuta cuando el elemento se saca del documento.
-      // detached: function() {
-      // },
-
-      // Se ejecuta cuando uno de los atributos cambia sí y solo sí ese atributo no este declarado como propiedad, en este caso, para el ejemplo el atributo "apellido".
-      // attributeChanged: function() {
-      // }
     });
   </script>
 </dom-module>
-
-<!-- <dom-module id="omju-component">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]!</h2>
-    <content></content>
-  </template>
-
-  <script>
-    /**
-     * `omju-component`
-     * Elemento para escritura de texto. Prueba.
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class OmjuComponent extends Polymer.Element {
-      static get is() { return 'omju-component'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'Omar'
-          }
-        };
-      }
-    }
-
-    window.customElements.define(OmjuComponent.is, OmjuComponent);
-  </script>
-</dom-module> -->
