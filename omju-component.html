@@ -5,10 +5,38 @@
       :host {
         display: block;
       }
-    </style>
 
+      .contenedor-master {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        flex-flow: column wrap;
+      }
+    </style>
     
-    <h1 id="titulo">Hola, soy [[name]] y tengo [[edad]] años.</h1>
+    <div class="contenedor-master">
+      <div class="titulos">
+        <h1>Bienvenido/a</h1>
+        <h2>Ingresa tus datos</h2>
+      </div>
+      <div class="formulario">
+        <div class="contenedor-entrada">
+          <input type="text" class="dato-entrada">
+          <input type="text" class="dato-entrada">
+        </div>
+        <div class="contenedor-entrada">
+          <input type="text" class="dato-entrada">
+        </div>
+        <div class="contenedor-entrada">
+          <input type="text" class="dato-entrada">
+        </div>
+        <div class="contenedor-entrada">
+          <input type="text" class="dato-entrada">
+          <input type="text" class="dato-entrada">
+        </div>
+      </div>
+    </div>
   </template>
 
   <script>
@@ -23,26 +51,26 @@
           type: Number,
           value: 25
         }
-      },
+      }
       // Se ejecuta cuando el componente está creado. Acceso al elemento y sus propiedades.
-      created: function() {
-      },
+      // created: function() {
+      // },
 
       // Se ejecuta cuando el componente está listo, siempre se ejecuta después de "created". Acceso al nodo local (local DOM).
-      ready: function() {
-      },
+      // ready: function() {
+      // },
 
       // Se ejecuta cuando el componente ya está en el documento, siempre se ejecuta después de "ready". Acceso al documento (document).
-      attached: function() {
-      },
+      // attached: function() {
+      // },
 
       // Se ejecuta cuando el elemento se saca del documento.
-      detached: function() {
-      },
+      // detached: function() {
+      // },
 
       // Se ejecuta cuando uno de los atributos cambia sí y solo sí ese atributo no este declarado como propiedad, en este caso, para el ejemplo el atributo "apellido".
-      attributeChanged: function() {
-      }
+      // attributeChanged: function() {
+      // }
     });
   </script>
 </dom-module>
