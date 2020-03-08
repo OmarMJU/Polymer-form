@@ -92,30 +92,30 @@
   </template>
 
   <script>
-    Polymer({
-      is: "omju-component",
-      properties: {
-        name: {
-          type: String
-          // value: "Omar"
-        },
-        lastname: {
-          type: String
-          // value: "Juarez"
-        },
-        direccion: {
-          type: String
-          // value: "En algun lugar de un gran pais"
-        },
-        correo: {
-          type: String
-          // value: "omarmauricio.juarez.contractor@bbva.com"
-        },
-        password: {
-          type: String
-          // value: "este-es-mi-pass"
+    class OmjuComponent extends Polymer.Element {
+      static get is() {
+        return "omju-component";
+      }
+
+      static get properties() {
+        return {
+          name: {
+            type: String
+          },
+          lastname: {
+            type: String
+          },
+          direccion: {
+            type: String
+          },
+          correo: {
+            type: String
+          },
+          password: {
+            type: String
+          }
         }
       }
-    });
+    }
   </script>
 </dom-module>
