@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="./hijo-component.html">
 
 <dom-module id="omju-component">
 
@@ -81,7 +82,7 @@
 
     <div class="contenedor-datos">
       <div class="contenedor-entrada">
-        <p>Nombre: {{name}}</p>
+        <p>Nombre: {{name}}></p>
         <p>Apellido: {{lastname}}</p>
       </div>
       <div class="contenedor-entrada">
@@ -101,21 +102,11 @@
 
       static get properties() {
         return {
-          name: {
-            type: String
-          },
-          lastname: {
-            type: String
-          },
-          direccion: {
-            type: String
-          },
-          correo: {
-            type: String
-          },
-          password: {
-            type: String
-          }
+          name: { type: String },
+          lastname: { type: String },
+          direccion: { type: String },
+          correo: { type: String },
+          password: { type: String }
         }
       }
     }
