@@ -61,19 +61,32 @@
       </div>
       <div class="formulario">
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Nombre" value="[[name]]">
-          <input type="text" class="dato-entrada" placeholder="Apellido" value="[[lastname]]">
+          <input type="text" class="dato-entrada" placeholder="Nombre" value="{{name::change}}">
+          <input type="text" class="dato-entrada" placeholder="Apellido" value="{{lastname::change}}">
         </div>
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Direcci&oacute;n" value="[[direccion]]">
+          <input type="text" class="dato-entrada" placeholder="Direcci&oacute;n" value="{{direccion::change}}">
         </div>
         <div class="contenedor-entrada">
-          <input type="text" class="dato-entrada" placeholder="Emal" value="[[correo]]">
+          <input type="text" class="dato-entrada" placeholder="Emal" value="{{correo::change}}">
         </div>
         <div class="contenedor-entrada">
-          <input type="password" class="dato-entrada" placeholder="Password" value="[[password]]">
-          <input type="password" class="dato-entrada" placeholder="Confirma Password" value="[[password]]">
+          <input type="password" class="dato-entrada" placeholder="Password" value="{{password::change}}">
+          <input type="password" class="dato-entrada" placeholder="Confirma Password" value="{{password::change}}">
         </div>
+      </div>
+    </div>
+
+    <div class="contenedor-datos">
+      <div class="contenedor-entrada">
+        <p>Nombre: {{name}}</p>
+        <p>Apellido: {{lastname}}</p>
+      </div>
+      <div class="contenedor-entrada">
+        <p>Direcci&oacute;n: {{direccion}}</p>
+      </div>
+      <div class="contenedor-entrada">
+        <p>Correo: {{correo}}</p>
       </div>
     </div>
   </template>
