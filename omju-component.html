@@ -57,11 +57,16 @@
       }
     </style>
     
+    <!-- Contenedor del formulario. -->
     <div class="contenedor-master">
+
+      <!-- Contenedor de los titulos -->
       <div class="titulos">
         <h1>Bienvenido/a</h1>
         <h2>Ingresa tus datos</h2>
       </div>
+
+      <!-- Contenedor del formulario. -->
       <div class="formulario">
         <div class="contenedor-entrada">
           <input type="text" class="dato-entrada" placeholder="Nombre" value="{{name::change}}">
@@ -78,8 +83,10 @@
           <input type="password" class="dato-entrada" placeholder="Confirma Password" value="{{password::change}}">
         </div>
       </div>
+
     </div>
 
+    <!-- Contenedor para mostrar los datos. -->
     <div class="contenedor-datos">
       <div class="contenedor-entrada">
         <p>Nombre: {{name}}></p>
@@ -92,6 +99,7 @@
         <p>Correo: {{correo}}</p>
       </div>
     </div>
+    
   </template>
 
   <script>
