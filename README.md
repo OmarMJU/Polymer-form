@@ -1,6 +1,6 @@
-# \<omju-component\>
+# Formulario con Polymer
 
-Elemento para escritura de texto. Prueba.
+Elemento para escritura de texto. Prueba con Polymer.
 
 ## Install the Polymer-CLI
 
