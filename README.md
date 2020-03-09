@@ -2,6 +2,10 @@
 
 Elemento para escritura de texto. Prueba con Polymer.
 
+## Dependencias
+
+Para el proyecto se necesita instalar [Bower](https://bower.io) y [Git](https://git-scm.com).
+
 ## Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
