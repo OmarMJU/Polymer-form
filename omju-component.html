@@ -99,15 +99,23 @@
         <p>Correo: {{correo}}</p>
       </div>
     </div>
-    
+
   </template>
 
   <script>
+    /**
+     * Componente en Polymer el cual representa un formulario.
+     * Omar M. Juárez
+     * 08/03/2020
+     */
     class OmjuComponent extends Polymer.Element {
+
+      // Regresa el elemento creado.
       static get is() {
         return "omju-component";
       }
 
+      // Se definen la propiedades del elemento.
       static get properties() {
         return {
           name: { type: String },
@@ -119,6 +127,7 @@
       }
     }
 
+    // Se publica el elemento.
     window.customElements.define(OmjuComponent.is, OmjuComponent);
   </script>
 </dom-module>
