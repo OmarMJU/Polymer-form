@@ -57,11 +57,16 @@
       }
     </style>
     
+    <!-- Contenedor del formulario. -->
     <div class="contenedor-master">
+
+      <!-- Contenedor de los titulos -->
       <div class="titulos">
         <h1>Bienvenido/a</h1>
         <h2>Ingresa tus datos</h2>
       </div>
+
+      <!-- Contenedor del formulario. -->
       <div class="formulario">
         <div class="contenedor-entrada">
           <input type="text" class="dato-entrada" placeholder="Nombre" value="{{name::change}}">
@@ -78,8 +83,10 @@
           <input type="password" class="dato-entrada" placeholder="Confirma Password" value="{{password::change}}">
         </div>
       </div>
+
     </div>
 
+    <!-- Contenedor para mostrar los datos. -->
     <div class="contenedor-datos">
       <div class="contenedor-entrada">
         <p>Nombre: {{name}}></p>
@@ -92,14 +99,23 @@
         <p>Correo: {{correo}}</p>
       </div>
     </div>
+
   </template>
 
   <script>
+    /**
+     * Componente en Polymer el cual representa un formulario.
+     * Omar M. Juárez
+     * 08/03/2020
+     */
     class OmjuComponent extends Polymer.Element {
+
+      // Regresa el elemento creado.
       static get is() {
         return "omju-component";
       }
 
+      // Se definen la propiedades del elemento.
       static get properties() {
         return {
           name: { type: String },
@@ -111,6 +127,7 @@
       }
     }
 
+    // Se publica el elemento.
     window.customElements.define(OmjuComponent.is, OmjuComponent);
   </script>
 </dom-module>
